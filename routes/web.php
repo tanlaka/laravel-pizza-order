@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/pizzas', function () {
+    return view('pizzas', ['username' => 'Yuyen Kiniben', 'token' => 'u73hs8HG736G3']);
+});
+
+
