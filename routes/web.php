@@ -19,7 +19,11 @@ Route::get('/', function () {
 
 
 Route::get('/pizzas', function () {
-    return view('pizzas', ['username' => 'Yuyen Kiniben', 'token' => 'u73hs8HG736G3']);
+    $user_info = [
+        'username' => 'Yuyen Kiniben', 
+        'token' => 'u73hs8HG736G3'
+    ];
+    return view('pizzas', $user_info);
 });
 
 
